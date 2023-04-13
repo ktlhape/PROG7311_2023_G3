@@ -1,0 +1,8 @@
+D:\VC\PROG7311\GR3\DesignPatterns\bin\Debug\DesignPatterns.exe.config
+D:\VC\PROG7311\GR3\DesignPatterns\bin\Debug\DesignPatterns.exe
+D:\VC\PROG7311\GR3\DesignPatterns\bin\Debug\DesignPatterns.pdb
+D:\VC\PROG7311\GR3\DesignPatterns\obj\Debug\DesignPatterns.csproj.AssemblyReference.cache
+D:\VC\PROG7311\GR3\DesignPatterns\obj\Debug\DesignPatterns.csproj.SuggestedBindingRedirects.cache
+D:\VC\PROG7311\GR3\DesignPatterns\obj\Debug\DesignPatterns.csproj.CoreCompileInputs.cache
+D:\VC\PROG7311\GR3\DesignPatterns\obj\Debug\DesignPatterns.exe
+D:\VC\PROG7311\GR3\DesignPatterns\obj\Debug\DesignPatterns.pdb

@@ -1,0 +1,8 @@
+D:\VC\PROG7311\GR3\OOP\obj\Debug\OOP.csproj.AssemblyReference.cache
+D:\VC\PROG7311\GR3\OOP\obj\Debug\OOP.csproj.SuggestedBindingRedirects.cache
+D:\VC\PROG7311\GR3\OOP\obj\Debug\OOP.csproj.CoreCompileInputs.cache
+D:\VC\PROG7311\GR3\OOP\bin\Debug\OOP.exe.config
+D:\VC\PROG7311\GR3\OOP\bin\Debug\OOP.exe
+D:\VC\PROG7311\GR3\OOP\bin\Debug\OOP.pdb
+D:\VC\PROG7311\GR3\OOP\obj\Debug\OOP.exe
+D:\VC\PROG7311\GR3\OOP\obj\Debug\OOP.pdb
