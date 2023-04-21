@@ -41,7 +41,15 @@ namespace StudentWebAppl.Controllers
         // GET: StudentController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Student st = new Student();
+           HttpResponseMessage response = 
+                _client.GetAsync($"{_client.BaseAddress}Student/GetStudentByID/{id}").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                st = JsonConvert.DeserializeObject<Student>(data);
+            }
+            return View(st);
         }
 
         // GET: StudentController/Create

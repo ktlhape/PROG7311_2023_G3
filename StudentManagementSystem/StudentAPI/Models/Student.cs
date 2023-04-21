@@ -8,6 +8,7 @@
         public int Age { get; set; }
         public char Gender { get; set; }
 
+        public Student(){}
         public Student(int studentID, string? firstname, string? lastname, int age, char gender)
         {
             StudentID = studentID;
