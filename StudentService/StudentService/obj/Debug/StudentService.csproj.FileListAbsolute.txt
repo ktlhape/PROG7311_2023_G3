@@ -1,0 +1,7 @@
+D:\VC\PROG7311\GR3\StudentService\StudentService\bin\StudentService.dll.config
+D:\VC\PROG7311\GR3\StudentService\StudentService\bin\StudentService.dll
+D:\VC\PROG7311\GR3\StudentService\StudentService\bin\StudentService.pdb
+D:\VC\PROG7311\GR3\StudentService\StudentService\obj\Debug\StudentService.csproj.AssemblyReference.cache
+D:\VC\PROG7311\GR3\StudentService\StudentService\obj\Debug\StudentService.csproj.CoreCompileInputs.cache
+D:\VC\PROG7311\GR3\StudentService\StudentService\obj\Debug\StudentService.dll
+D:\VC\PROG7311\GR3\StudentService\StudentService\obj\Debug\StudentService.pdb
