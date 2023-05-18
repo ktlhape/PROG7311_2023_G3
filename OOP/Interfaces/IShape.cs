@@ -8,7 +8,7 @@ namespace OOP.Interfaces
 {
     internal interface IShape
     {
-        double CalcArea(double x, double y);
+        double CalcArea();
         void PrintShape();
     }
 }

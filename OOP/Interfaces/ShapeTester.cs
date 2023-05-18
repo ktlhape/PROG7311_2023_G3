@@ -10,10 +10,15 @@ namespace OOP.Interfaces
     {
         static void Main(string[] args)
         {
-            Rectangle rc = new Rectangle();
+            Rectangle rc = new Rectangle(4,5);
             rc.PrintShape();
             rc.Draw();
-            Console.WriteLine("Area: " +  rc.CalcArea(5,4));
+            Console.WriteLine("Area: " +  rc.CalcArea());
+
+            IShape s = new Square(5);
+            s.PrintShape();
+            s.Draw();
+            Console.WriteLine("Area: " + s.CalcArea());
         }
     }
 }
