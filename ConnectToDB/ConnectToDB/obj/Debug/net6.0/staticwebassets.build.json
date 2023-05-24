@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KeLL2OhcFu/I1lOlC+mNQShbXfFlTDe0t8eoKqMQ0aY=",
+  "Hash": "5zfbHrrYbpStkNDsxytiXfLusY/6/4f2RyQKgFtRtR0=",
   "Source": "ConnectToDB",
   "BasePath": "_content/ConnectToDB",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\VC\\PROG7311\\GR3\\ConnectToDB\\ConnectToDB\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ConnectToDB.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\VC\\PROG7311\\GR3\\ConnectToDB\\ConnectToDB\\wwwroot\\css\\login.css",
+      "SourceId": "ConnectToDB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\VC\\PROG7311\\GR3\\ConnectToDB\\ConnectToDB\\wwwroot\\",
+      "BasePath": "_content/ConnectToDB",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "D:\\VC\\PROG7311\\GR3\\ConnectToDB\\ConnectToDB\\wwwroot\\css\\site.css",

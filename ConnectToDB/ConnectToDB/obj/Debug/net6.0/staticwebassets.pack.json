@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\ConnectToDB.bundle.scp.css"
     },
     {
+      "Id": "D:\\VC\\PROG7311\\GR3\\ConnectToDB\\ConnectToDB\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "D:\\VC\\PROG7311\\GR3\\ConnectToDB\\ConnectToDB\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

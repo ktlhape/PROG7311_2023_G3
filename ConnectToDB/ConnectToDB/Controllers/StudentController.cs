@@ -21,6 +21,7 @@ namespace ConnectToDB.Controllers
         // GET: StudentController
         public ActionResult Index()
         {
+            ViewBag.Type = 3;
             List<Student> stList = dbLayer.AllStudents();
             return View(stList);
         }
@@ -79,22 +80,29 @@ namespace ConnectToDB.Controllers
         }
 
         // GET: StudentController/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(string id)
         {
-            return View();
+            return View(dbLayer.GetStudent(id));
         }
 
         // POST: StudentController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(string id, IFormCollection collection)
         {
+            int x;
             try
             {
+               x = dbLayer.DeleteStudent(id);
+                if (x == 0)
+                {
+                    throw new Exception("Record not deleted");
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
+                ViewBag.Message = ex.Message;
                 return View();
             }
         }

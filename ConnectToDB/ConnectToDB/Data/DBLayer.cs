@@ -47,6 +47,28 @@ namespace ConnectToDB.Data
 
             return stList;
         }
+        public Student GetStudent(string id)
+        {
+
+            Student st = new Student();
+            using (SqlConnection myConn = new SqlConnection(conn))
+            {
+                SqlCommand cmdSelect = new SqlCommand($"SELECT * FROM STUDENTS WHERE STUDENT_ID = '{id}'", myConn);
+                myConn.Open();
+
+                using (SqlDataReader reader = cmdSelect.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                       st = new Student()
+                           .WithID((string)reader[0]).WithName((string)reader[1], (string)reader[2])
+                           .WithEmail((string)reader["Email"])
+                           .Build();
+                    }
+                } 
+            }
+            return st;
+        }
 
         public List<Modules> StudentModules(string stID)
         {
@@ -96,6 +118,34 @@ namespace ConnectToDB.Data
                 }
             }
             return st;
+        }
+
+        public int DeleteStudent(string id)
+        {
+            SqlConnection myConn = new SqlConnection(conn);
+            SqlCommand cmdDelete = new SqlCommand($"DELETE FROM STUDENTS WHERE STUDENT_ID ='{id}'",myConn);
+            SqlTransaction transaction;
+
+            myConn.Open();
+            transaction = myConn.BeginTransaction();
+            cmdDelete.Transaction = transaction;
+            int x = 0;
+            try
+            {
+              x =  cmdDelete.ExecuteNonQuery();
+                transaction.Commit();
+            }
+            catch (Exception)
+            {
+
+                transaction.Rollback();
+            }
+            finally
+            {
+                myConn.Close();
+            }
+
+            return x;
         }
     }
 }
